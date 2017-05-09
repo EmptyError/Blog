@@ -5,10 +5,12 @@ import com.yana.home.exceptions.ValidationException;
 import com.yana.home.utill.ValidationMessages;
 import com.yana.home.utill.ValidationPatterns;
 import com.yana.home.validation.Validator;
+import org.springframework.stereotype.Component;
 
 /**
  * Created by Admin on 02.05.2017.
  */
+@Component
 public class UserValidator implements Validator {
     @Override
     public String validate(Object object) {
