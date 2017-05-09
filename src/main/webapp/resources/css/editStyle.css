@@ -1,0 +1,22 @@
+.editArticle{
+    background-color: #ffd6db;
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #f589df;
+    border-radius: 10px;
+
+}
+#editArticleButton{
+    margin-left: 40%;
+    margin-top:20px;
+}
+#edit-text{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: large;
+    color: dimgrey;
+    cursor: default;
+}
