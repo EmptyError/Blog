@@ -39,7 +39,7 @@ public class CommentController {
         if (user.getId() == commentsService.findOne(id).getUser().getId()||user.getId()==author.getId()) {
             commentsService.delete(id);
         }
-        return "redirect:/";
+        return "redirect:/read/article/"+article.getId();
     }
 
     @RequestMapping(value = "/edit/comment/{id}", method = RequestMethod.GET)

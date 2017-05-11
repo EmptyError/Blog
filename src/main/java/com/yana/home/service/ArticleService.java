@@ -14,5 +14,5 @@ public interface ArticleService {
     public void delete(int id);
     public List <Article> findAll();
     public Article findOne(int id);
-    public  Article edit(int id,String subject,String text);
+    public  void edit(int id,String subject,String text);
 }

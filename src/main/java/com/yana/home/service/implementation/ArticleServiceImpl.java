@@ -39,13 +39,13 @@ articleRepo.delete(id);
     }
 
     @Override
-    public Article edit(int id, String subject, String text) {
+    public void edit(int id, String subject, String text) {
         Article article=articleRepo.findOne(id);
         if(subject!=null){
         article.setSubject(subject);}
         if(text!=null){
         article.setText(text);}
         articleRepo.save(article);
-        return article;
+
     }
 }
